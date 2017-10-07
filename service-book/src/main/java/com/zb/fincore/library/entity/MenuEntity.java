@@ -2,24 +2,20 @@ package com.zb.fincore.library.entity;
 
 import java.util.Date;
 
-public class BookEntity {
+public class MenuEntity {
     private Integer id;
 
     private String name;
 
-    private String author;
+    private String code;
 
-    private String press;
+    private String url;
 
-    private String barCode;
+    private Integer level;
 
-    private Integer cornerId;
+    private Integer parentId;
 
     private String status;
-
-    private String isHot;
-
-    private Integer version;
 
     private String createBy;
 
@@ -45,36 +41,36 @@ public class BookEntity {
         this.name = name == null ? null : name.trim();
     }
 
-    public String getAuthor() {
-        return author;
+    public String getCode() {
+        return code;
     }
 
-    public void setAuthor(String author) {
-        this.author = author == null ? null : author.trim();
+    public void setCode(String code) {
+        this.code = code == null ? null : code.trim();
     }
 
-    public String getPress() {
-        return press;
+    public String getUrl() {
+        return url;
     }
 
-    public void setPress(String press) {
-        this.press = press == null ? null : press.trim();
+    public void setUrl(String url) {
+        this.url = url == null ? null : url.trim();
     }
 
-    public String getBarCode() {
-        return barCode;
+    public Integer getLevel() {
+        return level;
     }
 
-    public void setBarCode(String barCode) {
-        this.barCode = barCode == null ? null : barCode.trim();
+    public void setLevel(Integer level) {
+        this.level = level;
     }
 
-    public Integer getCornerId() {
-        return cornerId;
+    public Integer getParentId() {
+        return parentId;
     }
 
-    public void setCornerId(Integer cornerId) {
-        this.cornerId = cornerId;
+    public void setParentId(Integer parentId) {
+        this.parentId = parentId;
     }
 
     public String getStatus() {
@@ -83,22 +79,6 @@ public class BookEntity {
 
     public void setStatus(String status) {
         this.status = status == null ? null : status.trim();
-    }
-
-    public String getIsHot() {
-        return isHot;
-    }
-
-    public void setIsHot(String isHot) {
-        this.isHot = isHot == null ? null : isHot.trim();
-    }
-
-    public Integer getVersion() {
-        return version;
-    }
-
-    public void setVersion(Integer version) {
-        this.version = version;
     }
 
     public String getCreateBy() {
